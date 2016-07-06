@@ -1,0 +1,223 @@
+/*
+Theme Name: WP Bootstrap
+Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
+Description: A demo theme built to accompany the Treehouse blog post <a href="http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial">How to Build a WordPress Theme with Bootstrap</a>.
+Author: Zac Gordon
+Author URI: http://teamtreehouse.com/
+Version: 1.0
+Tags: responsive, white, bootstrap
+ 
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+ 
+This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
+*/
+
+@import url('bootstrap/css/bootstrap.css');
+@import url('bootstrap/css/bootstrap-theme.css');
+html body { 
+     margin: 0;
+     padding: 0;
+     font-family:"幼圆","Comic Sans MS","黑体",sans-serif;
+}
+
+#header{
+    background-image: url(img/head.png);
+    height: 250px;
+}
+
+.header-container{
+    position: relative;
+    z-index: 26;
+    height: 250px;
+    margin: 0 170px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 980px) {
+    .header-container{
+        margin: 0 50px;
+    }
+}
+
+.header-logo{
+    position: relative;
+    line-height: 250px;
+    margin:61px 0px; 
+    z-index: 10;
+    display: inline-block;
+    width: 515px;
+    height: 128px;
+    overflow: hidden;
+}
+
+.header-logo a{
+    display: block;
+    width: 515px;
+    height: 128px;
+    background: url("img/logo-head.png") no-repeat;
+    overflow: hidden;
+    text-indent: -999px;
+    text-decoration: none;
+}
+
+.header-logo-container img{
+    width: 100%;
+}
+
+.header-tel{
+    position: absolute;
+    width: 27%;
+    bottom: 40px;
+    right: 170px;
+    text-align: center;
+    color: white;
+}
+
+.header-code{
+    position: absolute;
+    width: 170px;
+    right: 0px;
+    top: 45px;
+    text-align: center;
+}
+
+.nav{
+    width: 100%;
+}
+
+.base-nav, .footer-links{
+    width: 100%;
+    height: 40px;
+    margin:0 auto;
+}
+
+.base-nav{
+    background-color: #EFCF26;
+}
+
+.nav-ul, .links-ul{
+    position: relative;
+    z-index: 25;
+    margin: 0 auto;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    max-width: 1000px;
+}
+
+.nav-ul{
+    color: #505075;
+    background: #EFCF26;
+    font-size: 18px;
+}
+
+.nav-ul li, .links-ul li{
+    float: left;
+    display: inline-block;
+    height: 40px;
+    width: 20%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.links-ul li a{
+    color: #A5DDEF;
+    text-decoration: none;
+}
+
+.nav-ul li a{
+    background: #EFCF26;
+    text-decoration: none;
+    color: #505075;
+    letter-spacing:10px;
+}
+
+footer{
+    /*background-color: #75A8BC;*/
+    height: 290px;
+    width: 100%;
+    padding-top: 20px;
+    background: url("img/footer-background.png");
+}
+
+
+.footer-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 180px;
+    size: 14px;
+    color: #A5DDEF;
+}
+
+.footer-item{
+    width: 200px;
+    height: 160px;
+    float: left;
+    display: inline-block;
+    /*border-left: 1px solid #dedede;*/
+    /*margin-left: -1px;*/
+    text-align: center;
+    line-height: 160px;
+}
+
+.footerlogo{
+    height: 100%;
+}
+
+.footerlogo img{
+    vertical-align: middle;
+    height: 100%;
+}
+
+.about{
+    width: 120px;
+}
+
+.empty{
+    width: 280px;
+}
+
+@media screen and (max-width: 980px) {
+    .empty{
+        width: 50px;
+    }
+}
+
+.weibo{
+    padding-top:50px; 
+}
+
+.about dd{
+   margin-top: 10px;
+}
+
+.about dd a{
+   color: #A5DDEF;
+   text-decoration: none;
+}
+
+.footerlayer1{
+    overflow: hidden;
+}
+@media screen and (max-width: 980px) {
+    .footerlayer1{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.footerlayer2{
+    height: 40px;
+}
+.footerlayer3{
+    height: 20px;
+    /*background-color: red;*/
+}
+.footercopy{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #0D5460;
+    font-family: "Microsoft YaHei" ! important;
+}
